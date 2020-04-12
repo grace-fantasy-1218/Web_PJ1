@@ -20,21 +20,15 @@ https://github.com/grace-fantasy-1218/Web_PJ1
 
 2.在首页头图下面，用js写了一段动图，可以使照片循环播放，且鼠标放置在上可以暂停，赋予页面动感
 
-3.首页的布局参考了Feekr的旅游网站，分为两个div，大小错落的摆置。且每个div都以一条淡蓝色底部边框分割，如下图。![6a621f21c8caece86b698551df7ac49](C:\Users\SHXJYG~1\AppData\Local\Temp\WeChat Files\6a621f21c8caece86b698551df7ac49.png)
+3.首页的布局参考了Feekr的旅游网站，分为两个div，大小错落的摆置。且每个div都以一条淡蓝色底部边框分割。
 
 4.浏览页等界面的外框架为蓝色虚线，标题为蓝底(如下图)，还是简洁清爽路线。
 
-![c105cb2aee6178fef149c42b87adfde](C:\Users\SHXJYG~1\AppData\Local\Temp\WeChat Files\c105cb2aee6178fef149c42b87adfde.png)
-
-5.图片详情页的想法，是感觉样例中的框线太过平板，想减少线条。毕竟是图片详情，所以左图非常大，把作者姓名白色放在图片角落，一方面为图片署名防盗用，一方面节省介绍框的空间。右边介绍因为坐标，主题相对于标题和简介不重要，所以标灰小字，收藏使用粉色框框，并以爱心加以修饰。如图。
-
-![67a61943a4c2ded70fa1883560ea160](C:\Users\SHXJYG~1\AppData\Local\Temp\WeChat Files\67a61943a4c2ded70fa1883560ea160.png)
+5.图片详情页的想法，是感觉样例中的框线太过平板，想减少线条。毕竟是图片详情，所以左图非常大，把作者姓名白色放在图片角落，一方面为图片署名防盗用，一方面节省介绍框的空间。右边介绍因为坐标，主题相对于标题和简介不重要，所以标灰小字，收藏使用粉色框框，并以爱心加以修饰。
 
 #### Bonus完成情况
 
 ###### 复杂图片处理
-
-![cca9275d51f08240c43c84b805e099b](C:\Users\SHXJYG~1\AppData\Local\Temp\WeChat Files\cca9275d51f08240c43c84b805e099b.png)
 
 使用了object-fit: cover的语法，再对图片进行剪裁，防止图片变形
 
