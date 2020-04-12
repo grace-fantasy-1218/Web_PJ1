@@ -8,6 +8,8 @@
 
 https://github.com/grace-fantasy-1218/Web_PJ1
 
+静态网址：https://grace-fantasy-1218.github.io/Web_Pj1/ 
+
 #### 项目完成情况
 
 完成所以要求的界面
