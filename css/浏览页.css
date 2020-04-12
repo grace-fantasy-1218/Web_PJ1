@@ -1,0 +1,60 @@
+/*左侧侧边栏*/
+#小标题{
+    font-family: monospace;
+    font-weight: bolder;
+    padding-left: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: lightblue;
+}
+#search{
+    width: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#search_check{
+    margin-right: 20px;
+}
+.板块{  
+    border-collapse: collapse;
+    border-color: lightblue;
+    border-style: dotted;
+}
+.板块 li{
+    font-size: 20px;
+}
+aside{
+    position: absolute;
+    left: 200px;
+    top: 300px;
+}
+
+/*中间板块*/
+#主要板块{
+    margin-left: 420px;
+    margin-top: 70px;
+    width: 860px;
+}
+#pics img{
+    object-fit: cover;
+    width: 190px;
+    height: 190px;
+    padding: 10px;
+}
+#主要板块 select{
+    margin: 20px;
+}
+#页数{
+    margin-left: 330px;
+}
+#开始筛选{
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: lightblue;
+    border-style: dashed white 1px;
+    padding: 5px;
+    border-radius: 4px;
+}
+#浏览页{
+    background-color: rgba(120, 198, 243, 0.897);
+}

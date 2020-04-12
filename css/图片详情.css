@@ -1,0 +1,56 @@
+#main{
+    margin-top: 50px;
+}
+#左图 img{
+    object-fit:cover;
+    width: 750px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+#左图 p{
+    color: rgb(255, 255, 255);
+    margin-top: -40px;
+    margin-left: 570px;
+    font-size: 20px;
+}
+#坐标{
+    font-size: 13px;
+    color: rgb(109, 109, 109);
+}
+#右描述 img{
+    object-fit:cover;
+    width: 20px;
+    height: 20px;
+}
+#details{
+    font-size: 20px;
+}
+#右描述 h2{
+    font-size: 30px;
+    background-color: lightblue;
+    border-radius: 4px;
+    padding: 5px;
+}
+#右描述 div div p{
+    display: inline;
+    padding: 7px;
+    border: lightcoral;
+    border-style: dashed;
+    border-radius: 4px;
+}
+#右描述 div p{
+    font-size: 15px;
+    color: rgb(109, 109, 109);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 0;
+    text-align: center;
+}
+#收藏{
+    font-size: 15px;
+    background-color: #fff;
+    border: none;
+    color: rgb(109, 109, 109);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 0;
+    text-align: center;
+}

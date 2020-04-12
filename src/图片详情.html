@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片详情</title>
+    <link rel="stylesheet"  type="text/css" href="../css/导航页脚.css" media="all">
+    <link rel="stylesheet"  type="text/css" href="../css/图片详情.css" media="all">
+</head>
+<body>
+    <header>
+        <h1>Travel Images</h1>
+        <nav>
+            <a href="首页.html" id="首页" autofocus><p>首页</p></a>
+            <a href="浏览页.html" autofocus><p>浏览</p></a>
+            <a href="搜索页.html" autofocus><p>搜索</p></a>
+            <div class="box">
+                <div class="box-item">我的账户</div>
+                <ul class="box-ul">
+                    <li><img src="../images/我的账户/上传.jpg"><a href="上传.html">上传</a></li>
+                    <li><img src="../images/我的账户/我的照片.jpg"><a href="我的照片.html">我的照片</a></li>
+                    <li><img src="../images/我的账户/我的收藏.jpg"><a href="我的收藏.html">我的收藏</a></li>
+                    <li><img src="../images/我的账户/登入.jpg"><a href="../index.html">登录</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="main">
+        <table>
+        <td id="左图">
+            <img src="../images/travel-images/图片详情.jpg">
+            <p>taken by GraceShao</p> 
+        </td>
+        <td id="右描述">
+            <h2>Planet</h2>
+            <p id="坐标">坐标：中国上海 | 主题：山清水秀</p>
+            <p id="details">If someone loves a flower, of which just one single blossom grows in all the millions and millions of stars, 
+                it is enough to make him happy just to look at the stars.If someone loves a flower, 
+                of which just one single blossom grows in all the millions and millions of stars, 
+                it is enough to make him happy just to look at the stars. He can say to himself,
+                "Somewhere, my flower is there…" But if the sheep eats the flower, in one moment all his stars will be darkened…</p>
+                <br><br><br>
+                <div><div>
+                    <p>Like Number: 101</p>        
+                    <p><img src="../images/爱心.jpg"><input type="button" id="收藏" value="收藏" onclick="display_alert()"></p>
+                </div></div>
+                <script>
+                    function display_alert()
+                    {
+                        alert("收藏成功")
+                        }
+                </script>
+        </td>
+        </table>   
+    </div>
+
+    <footer>
+        <p>© Copyright by GraceShao | 沪ICP备19302010066</p>
+        <p>意见箱</p>
+        <p>联系我们</p>
+        <p>加入我们</p>          
+    </footer>
+</body>
+</html>

@@ -1,0 +1,137 @@
+/*图片排版位置居中*/
+#main{
+    margin-left: 220px;
+    margin-right: 200px;
+    border: none;
+    margin-bottom: 30px;
+}   
+
+/*页眉页脚*/
+nav,footer{
+    background-color: rgba(24, 26, 39, 0.822);
+    width: 100%;
+    height: 60px;
+    display: inline-block;
+}
+footer{
+    margin-top: 50px;
+}
+nav p,footer p{
+    display: inline;
+    color: rgb(255, 255, 255);
+    margin:20px;
+    float: right;
+}
+
+/*Travel Images 大标题*/
+h1{
+    margin: -10px;
+    margin-bottom: 0;
+    padding-left: 300px;
+    font-family: fantasy;
+    font-size: 100px;
+    color:  #278de0;
+    background-image: url("../images/底图.jpg");
+    background-size: 10000px 300px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+a:hover{
+    background-color: #c5e5ff;
+}
+footer p:hover{
+    color: #c5e5ff;
+}
+nav a{
+    float: left;
+}
+#首页{
+    margin-left: 200px;
+}
+
+/*我的账户下拉菜单*/
+.box{
+    border: none;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin-left: 800px;
+}
+.box:hover>ul{
+    display: block;
+}
+.box-item{
+    border: none;
+    height: 20px;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+}
+.box-ul{
+    position: absolute;
+    display: none;
+    width: 100%;
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+.box li{
+    height: 30px;
+    line-height: 30px;
+}
+.box li:hover{
+    background: #c5e5ff;
+}
+.box li img{
+    width:20px;
+}
+.box a{
+    color: black;
+}
+
+/*页数*/
+#页数{
+    margin-left: 550px;
+    width: 400px;
+    height: 80px;
+    font-size: 25px;
+}
+
+/*select*/
+select {		
+    display: inline-block;		
+    width: 180px;
+    height: 40px;		
+    overflow: hidden;		
+    background-color: #fff;		
+    color: #555;		
+    border: 1px solid #aaa;		
+    text-shadow: none;		
+    border-radius: 4px;			
+    transition: box-shadow 0.25s ease;		
+    z-index: 2;	} 	
+select:hover {		
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);	
+} 	
+select:before {		
+    content: "";		
+    position: absolute;		
+    width: 0;		height: 0;		
+    border: 10px solid transparent;		
+    border-top-color: #ccc;		
+    top: 14px;		right: 10px;		
+    cursor: pointer;		
+    z-index: -2;	
+}	
+select select {		
+    cursor: pointer;		
+    padding: 10px;		
+    width: 100%;		
+    border: none;		
+    background: transparent;		
+    background-image: none;		
+    -webkit-appearance: none;		
+    -moz-appearance: none;	} 	
+select select:focus {		outline: none;	}

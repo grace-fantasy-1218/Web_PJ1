@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录账户</title>
+    <link rel="stylesheet"  type="text/css" href="C:\Users\shxjygrace\Desktop\2020上\Web\Project 1\css\index.css" media="all">
+</head>
+<body>
+    <div id="contents">
+    <h1>注册账号</h1>
+    <section>
+        <form action="#" method="GET">
+        <p>
+            <strong>用户名</strong><br>
+            <input type="text" name="text" pattern="\w" required placeholder="允许大小写字母、数字和下划线">
+        </p>
+            <strong>请输入密码</strong><br>
+            <input type="password" name="password" pattern="^[A-Za-z0-9]+$" required placeholder="8位以上，允许大小写字母加数字">
+        </p>
+        <a href="src/注册.html" id="前往注册" autofocus><p>未注册用户点击前往注册</p></a>
+       
+        <input type="submit" value="登录" id="submit" onclick="window.location.href='src/首页.html'">
+        </form>
+    </section>
+    </div>
+
+    <footer>
+        <p>备案号：19302010066</p>
+        <p>意见箱</p>
+        <p>联系我们</p>
+        <p>加入我们</p>          
+    </footer>
+</body>
+</html>

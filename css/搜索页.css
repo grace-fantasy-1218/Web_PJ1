@@ -1,0 +1,29 @@
+#搜索框{
+    border-collapse: collapse;
+    border-color: lightblue;
+    border-style: dotted;
+}
+#搜索框 input{
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#search_title{
+    height: 30px;
+    width: 200px;
+}
+#search_des{
+    width: 1000px;
+    height: 150px;
+}
+#开始搜索{
+    margin-left: 10px;
+    width: 100px;
+    background-color: lightblue;
+    border-style: dashed white 1px;
+    padding: 10px;
+    border-radius: 4px;
+}
+#搜索页{
+    background-color: rgba(120, 198, 243, 0.897);
+}

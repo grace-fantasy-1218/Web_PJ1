@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浏览</title>
+    <link rel="stylesheet"  type="text/css" href="../css/导航页脚.css" media="all">
+    <link rel="stylesheet"  type="text/css" href="../css/浏览页.css" media="all">
+</head>
+<body>
+    <header>
+        <h1>Travel Images</h1>
+        <nav>
+            <a href="首页.html" id="首页" autofocus><p>首页</p></a>
+            <a href="浏览页.html" id="浏览页" autofocus><p>浏览</p></a>
+            <a href="搜索页.html" autofocus><p>搜索</p></a>
+            <div class="box">
+                <div class="box-item">我的账户</div>
+                <ul class="box-ul">
+                    <li><a href="上传.html"><img src="../images/我的账户/上传.jpg">上传</a></li>
+                    <li><a href="我的照片.html"><img src="../images/我的账户/我的照片.jpg">我的照片</a></li>
+                    <li><a href="我的收藏.html"><img src="../images/我的账户/我的收藏.jpg">我的收藏</a></li>
+                    <li><a href="../index.html"><img src="../images/我的账户/登入.jpg">登录</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <aside>
+    <div class="板块">
+        <h3 id="小标题">搜索标题</h3><br>
+        <input type="text" name="搜索框" placeholder="搜索景点" id="search">
+        <input type="submit" value="🔍" id="search_check" onclick="display_alert1()">
+        <script>
+            function display_alert1()
+            {
+                alert("搜索")
+                }
+        </script>
+    </div>
+    <div class="板块">
+        <h3 id="小标题">热门内容</h3>
+        <ul>
+            <li onclick="display_alert()">Scenery</li>
+            <li onclick="display_alert()">People</li>
+            <li onclick="display_alert()">Wonder</li>
+            <li onclick="display_alert()">Building</li>
+        </ul>
+    </div>
+    <div class="板块">
+        <h3 id="小标题">热门国家</h3>
+        <ul>
+            <li onclick="display_alert()">China</li>
+            <li onclick="display_alert()">Italy</li>
+            <li onclick="display_alert()">Japan</li>
+            <li onclick="display_alert()">America</li>
+        </ul>
+    </div>
+    <div class="板块">
+        <h3 id="小标题">热门城市</h3>
+        <ul>
+            <li onclick="display_alert()">Shanghai</li>
+            <li onclick="display_alert()">Kunming</li>
+            <li onclick="display_alert()">Yantai</li>
+            <li onclick="display_alert()">Beijing</li>
+        </ul>
+    </div>
+    
+    </aside>
+
+    <div id="主要板块">
+        <div class="板块">
+        <h3 id="小标题">筛选</h3>
+        <form name="form1" action="" method="get">    
+            <select name="content">
+                <option value="0">选择内容</option>    
+                <option value="Scenery">Scenery</option>    
+                <option value="People">People</option>
+                <option value="Wonder">Wonder</option>
+                <option value="Building">Building</option>
+            </select>
+            <select name="country" onChange="set_city(this, this.form.city);">    
+                <option value="0">选择国家</option>    
+                <option value="中国">中国</option>    
+                <option value="意大利">意大利</option>
+                <option value="日本">日本</option>
+                <option value="美国">美国</option>
+            </select>    
+            <select   name="city" id="citys">    
+                <option value="0">选择城市</option>   
+            </select>
+            <input type="submit" id="开始筛选" value="开始筛选" onclick="display_alert()">
+            <script>
+                function display_alert()
+                {
+                    alert("筛选成功")
+                    }
+            </script>
+        </form>
+        <script>
+            cities = new Object();
+            cities['中国']=new Array('Shanghai','Kunming','Beijing','Yantai');
+            cities['意大利']=new Array('Roma','Milan','Venice','Florence'); 
+            cities['日本']=new Array('Tokyo', 'Osaka', 'Kamakura'); 
+            cities['美国']=new Array('New York','San Francisco', 'Washington'); 
+            function set_city(country, city){    
+                var pv, cv;    
+                var i, ii;     
+                pv=country.value;    
+                cv=city.value;     
+                city.length=1;     
+                if(pv=='0') return;   
+                if(typeof(cities[pv])=='undefined') return;     
+                for(i=0; i<cities[pv].length; i++)    {       
+                    ii = i+1;       
+                    city.options[ii] = new Option();       
+                    city.options[ii].text = cities[pv][i];       city.options[ii].value = cities[pv][i];    } }
+        </script>
+        </div>
+        <div class="板块">
+        <table id="pics">
+            <tr>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/1.jpg"></a></td>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/2.jpg"></a></td>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/3.jpg"></a></td>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/4.jpg"></a></td>
+            </tr>
+            <tr>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/5.jpg"></a></td>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/6.jpg"></a></td>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/7.jpg"></a></td>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/8.jpg"></a></td>
+            </tr>
+            <tr>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/9.jpg"></a></td>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/10.jpg"></a></td>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/11.jpg"></a></td>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/12.jpg"></a></td>
+            </tr>
+            <tr>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/13.jpg"></a></td>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/14.jpg"></a></td>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/15.jpg"></a></td>
+                <td><a href="图片详情.html"><img src="../images/travel-images/首页六图/16.jpg"></a></td>
+            </tr>
+        </table>
+        <span id="页数"><1 2 3 4 5 6 ... 9 ></1></span>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>© Copyright by GraceShao | 沪ICP备19302010066</p>
+        <p>意见箱</p>
+        <p>联系我们</p>
+        <p>加入我们</p>          
+    </footer>
+</body>
